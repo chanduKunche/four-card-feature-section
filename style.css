@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: hsl(0, 0%, 98%);
+    font-family: 'Poppins';
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+}
+
+.heading {
+    width: 450px;
+    margin: auto;
+}
+
+#header .heading h1 {
+    font-size: 25px;
+    margin-top: -30px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%)
+}
+
+#hero {
+    width: 100%;
+}
+
+#hero .container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: auto;
+}
+
+#hero .container .content {
+    width: 33.33%;
+
+}
+
+.content {
+    padding: 10px;
+}
+
+.box {
+    background: white;
+    padding: 0px 20px 85px 20px;
+    box-shadow: 3px 11px 34px -15px rgba(0,0,0,0.45);
+    border-top: 4px solid hsl(180, 62%, 55%);
+    border-radius: 5px;
+}
+
+.content:nth-child(2) .box:nth-child(1) {
+    border-color: hsl(0, 78%, 62%);
+}
+
+.content:nth-child(2) .box:nth-child(2) {
+    border-color: hsl(34, 97%, 64%);
+}
+
+.content:nth-child(3) .box:nth-child(1) {
+    border-color: hsl(212, 86%, 64%);
+}
+
+.box p {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+}
+.box h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.box img {
+    float: right;
+}
+
+@media (max-width: 377px) {
+    .heading {
+        width: 320px;   
+    }
+    #hero .container {
+        flex-direction: column;
+        width: 90%;
+    }
+    #hero .container .content {
+        width: 100%;
+    }
+}
